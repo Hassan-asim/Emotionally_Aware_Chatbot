@@ -1,0 +1,12 @@
+pandas
+scikit-learn
+streamlit
+matplotlib
+nltk
+joblib
+openai
+google-generativeai
+jupyter
+python-dotenv
+spacy
+seaborn
