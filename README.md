@@ -105,3 +105,25 @@ Use `moodminerchatapp.py` for a Streamlit-powered chat interface that detects em
 * Uses `.env` for secret safety
 * Final cell: Streamlit GUI chat interface with emotion-based empathetic LLM responses (no local suggestions)
 * Reads train.txt, val.txt, test.txt from data/ and uses robust preprocessing, evaluation, and visualizations
+
+📊 Model Evaluation Results
+Below are the visual results from the model evaluation process, including accuracy scores, precision/recall metrics, and the confusion matrix for emotion classification.
+
+✅ Evaluation Metrics
+
+precision    recall  f1-score   support
+
+       anger       0.89      0.79      0.83       275
+        fear       0.87      0.82      0.85       224
+         joy       0.84      0.95      0.89       695
+        love       0.82      0.58      0.68       159
+     sadness       0.88      0.92      0.90       581
+    surprise       0.85      0.52      0.64        66
+
+    accuracy                           0.86      2000
+   macro avg       0.86      0.76      0.80      2000
+weighted avg       0.86      0.86      0.86      2000
+
+🖼️ Visual Outputs
+
+confusion matrix.png
