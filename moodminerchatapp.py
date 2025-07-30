@@ -50,8 +50,8 @@ if st.sidebar.button("New Chat", key="new_chat_button"):
 
 # --- Custom CSS for modern UI ---
 light_theme = """
-    --primary-bg-color: #FAFAF8;
-    --secondary-bg-color: #F3F4F6;
+    --primary-bg-color: #FFF4E6;
+    --secondary-bg-color: #FCEBD9;
     --text-color: #1F2937;
     --secondary-text-color: #6B7280;
     --user-msg-bg: linear-gradient(90deg, #FFB347 0%, #FF7F50 100%);
