@@ -26,7 +26,7 @@ try:
     model = joblib.load('model.pkl', mmap_mode=None)
     vectorizer = joblib.load('vectorizer.pkl', mmap_mode=None)
 except Exception as e:
-    print(f"Error loading model: {str(e)}")
+    st.error(f"Error loading model: {str(e)}")
     raise
 
 # Load spaCy model
@@ -237,7 +237,7 @@ if user_input := st.chat_input("Say something"):
         history = '\n'.join([f"User: {msg['user']}\nBot: {msg['bot']}" for msg in st.session_state['chat_history']])
         prompt = f"Previous conversation:\n{history}\n\n" + prompt
 
-    chat = genai.GenerativeModel('gemini-1.5-flash').start_chat()
+    chat = genai.GenerativeModel('gemini-2.0-flash').start_chat()
     gemini_response = chat.send_message(prompt).text
     st.session_state['chat_history'].append({'user': user_input, 'bot': gemini_response, 'emotion': emotion})
     st.rerun()
