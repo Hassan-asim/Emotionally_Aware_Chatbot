@@ -31,14 +31,7 @@ except Exception as e:
 
 # Load spaCy model
 import spacy
-import spacy.cli
-
-@st.cache_resource
-def load_spacy_model():
-    spacy.cli.download("en_core_web_sm")
-    return spacy.load('en_core_web_sm')
-
-nlp = load_spacy_model()
+nlp = spacy.load('en_core_web_sm')
 
 # Streamlit UI
 st.set_page_config(layout="wide")
