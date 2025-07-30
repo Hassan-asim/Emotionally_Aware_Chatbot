@@ -11,4 +11,5 @@ python-dotenv
 spacy[cpu]
 thinc[cpu]
 seaborn
+en_core_web_sm
 #updated requirments 
