@@ -201,7 +201,7 @@ with chat_container:
     st.markdown('<div class="chat-container">', unsafe_allow_html=True)
     for msg in st.session_state['chat_history']:
         st.markdown(f'<div class="user-message-container"><div class="chat-message user-message"><b>You:</b> {msg["user"]}</div></div>', unsafe_allow_html=True)
-        st.markdown(f'<div class="bot-message-container"><div class="chat-message bot-message"><b>Pixie (Emotion: *{msg["emotion"]}*):</b> {msg["bot"]}</div></div>', unsafe_allow_html=True)
+        st.markdown(f'<div class="bot-message-container"><div class="chat-message bot-message"><b>Bob (Emotion: *{msg["emotion"]}*):</b> {msg["bot"]}</div></div>', unsafe_allow_html=True)
     st.markdown('</div>', unsafe_allow_html=True)
 
 
